@@ -4,11 +4,11 @@ function BreakInterval(props) {
 
     return (
         <section>
-            <h4>Break Length</h4>
+            <h4>Break Length <span class="head">(min)</span></h4>
             <section className="interval-container-content">
-                <button>Down</button>
+                <button>Increase</button>
                 <p className="interval-length">{props.BreakInterval}</p>
-                <button>Up</button>
+                <button>Decrease</button>
             </section>
         </section>
     );

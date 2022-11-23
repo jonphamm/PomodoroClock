@@ -4,11 +4,11 @@ function SessionLength(props) {
 
     return (
         <section>
-            <h4>Session Length</h4>
+            <h4>Session Length <span class="head">(min)</span></h4>
             <section className="interval-container-content">
-                <button>Down</button>
+                <button>Increase</button>
                 <p className="interval-length">{props.sessionLength}</p>
-                <button>Up</button>
+                <button>Decrease</button>
             </section>
         </section>
     )
