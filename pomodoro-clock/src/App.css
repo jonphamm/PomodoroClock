@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.interval-container {
+  display: flex;
+}
+
+.interval-container-content {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+button {
+  padding: 5px 12px;
+  margin: 0 10px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
