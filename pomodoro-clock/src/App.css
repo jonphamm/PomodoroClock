@@ -20,7 +20,7 @@
   margin: 0;
 }
 
-.container {
+main {
   display: flex;
   height: 90vh;
   justify-content: center;
@@ -34,6 +34,11 @@ h2 {
   color: white;
 	-webkit-text-stroke: 1px #F8F8F8;
 	text-shadow: 0px 2px 6px #000000;
+  transition: 0.5s;
+}
+
+h2:hover {
+  transform: scale(1.05);
 }
 
 h4 {
@@ -55,10 +60,12 @@ h4 {
   border-radius: 16px;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
 }
 
 .interval-container:hover {
   box-shadow: 0px 1px 13px rgb(0, 0, 0);
+  transform: scale(1.01);
 }
 
 .interval-container-content {
@@ -86,7 +93,7 @@ button {
 
 button:hover {
   background-color: rgb(255, 74, 74);
-  transform: scale(1.1);
+  transform: scale(1.05);
   border: 2px solid rgb(255, 74, 74);
 }
 
@@ -105,10 +112,12 @@ button:hover {
   border-radius: 16px;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
 }
 
 .timer-container:hover {
   box-shadow: 0px 1px 13px rgb(0, 0, 0);
+  transform: scale(1.01);
 }
 
 .timer {
