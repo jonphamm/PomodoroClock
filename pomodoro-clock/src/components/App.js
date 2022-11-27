@@ -21,6 +21,7 @@ class App extends React.Component {
     this.onUpdateTimerMinute = this.onUpdateTimerMinute.bind(this);
     this.onToggleInterval = this.onToggleInterval.bind(this);
     this.onResetTimer = this.onResetTimer.bind(this);
+    this.onPlayStopTimer = this.onPlayStopTimer.bind(this);
   }
 
 // increase session length button
@@ -90,11 +91,13 @@ onToggleInterval(isSession) {
     })
   }
 
-  onPlayStopTimer() {
+  onPlayStopTimer(isPlay) {
     this.setState({
-      
+      isPlay: isPlay
     })
   }
+
+
 
   render() {
   return (
@@ -120,6 +123,7 @@ onToggleInterval(isSession) {
       updateTimerMinute={this.onUpdateTimerMinute}
       toggleInterval={this.onToggleInterval}
       resetTimer={this.onResetTimer}
+      onPlayStopTimer={this.onPlayStopTimer}
       />
     </main>
   );
